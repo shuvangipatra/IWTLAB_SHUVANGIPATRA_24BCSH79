@@ -1,0 +1,23 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.banner {
+  background: #e6f2e6;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.banner span {
+  margin: 0 5px;
+  font-size: 20px;
+}

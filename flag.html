@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiranga</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .flag {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        .saffron { background-color: #FF9933; height: 33.33%; }
+        .white { 
+            background-color: #FFFFFF; 
+            height: 33.33%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .green { background-color: #138808; height: 33.33%; }
+        .chakra {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #000080;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chakra::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: #000080;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        .spoke {
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: #000080;
+            left: 50%;
+            transform-origin: 50% 50%;
+        }
+        .spoke:nth-child(1)  { transform: translateX(-50%) rotate(0deg); }
+        .spoke:nth-child(2)  { transform: translateX(-50%) rotate(15deg); }
+        .spoke:nth-child(3)  { transform: translateX(-50%) rotate(30deg); }
+        .spoke:nth-child(4)  { transform: translateX(-50%) rotate(45deg); }
+        .spoke:nth-child(5)  { transform: translateX(-50%) rotate(60deg); }
+        .spoke:nth-child(6)  { transform: translateX(-50%) rotate(75deg); }
+        .spoke:nth-child(7)  { transform: translateX(-50%) rotate(90deg); }
+        .spoke:nth-child(8)  { transform: translateX(-50%) rotate(105deg); }
+        .spoke:nth-child(9)  { transform: translateX(-50%) rotate(120deg); }
+        .spoke:nth-child(10) { transform: translateX(-50%) rotate(135deg); }
+        .spoke:nth-child(11) { transform: translateX(-50%) rotate(150deg); }
+        .spoke:nth-child(12) { transform: translateX(-50%) rotate(165deg); }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="saffron"></div>
+        <div class="white">
+            <div class="chakra">
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+                <span class="spoke"></span>
+            </div>
+        </div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>

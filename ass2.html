@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: blue;
+            background-color: yellow;
+            font-size: 30px;
+            display: inline-block;
+            padding: 5px 20px;
+            border: 1px solid black;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .text-section {
+            flex: 1;
+        }
+
+        .photo-frame {
+            width: 300px;
+            border: 5px solid blue;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+        }
+
+        .tab {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        .tab th, .tab td {
+            padding: 12px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .tab th {
+            background-color: aquamarine;
+            font-weight: bold;
+            color: rgb(92, 11, 11);
+        }
+        .header-row {
+            background-color: bisque;
+            color: blueviolet;
+        }
+
+        .tab tr:nth-child(even) {
+            background-color: #463d3d;
+            color: white;
+        }
+
+        .tab tr:nth-child(odd):not(.header-row):not(:first-child) {
+            background-color: #e6dcdc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Welcome To CSS</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="text-section">
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. It handles the look and feel of a web page.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos blanditiis in unde repudiandae enim consequatur voluptatem, quas animi, assumenda adipisci consectetur nihil ullam, tempore minus tempora qui et totam!
+
+            </p>
+            
+            <h2>Why we use CSS?</h2>
+            <p>We use CSS to separate content from design. It allows us to control colors, fonts, spacing, and layouts across multiple web pages all at once, making websites more visually appealing and easier to maintain. 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit modi harum rerum dolorem asperiores animi eius minus accusantium temporibus earum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis necessitatibus labore ullam eveniet distinctio. Impedit deserunt quam enim blanditiis. Deleniti officia, architecto dolorum in, vel sunt exercitationem ad culpa voluptatibus obcaecati voluptate libero aperiam eligendi saepe reiciendis laborum! Quo, id!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis velit maxime magni omnis amet quia! Atque, eveniet. Illo, facilis. Velit?
+            </p>
+        </div>
+
+        <div class="photo-frame">
+            <img src="https://images.stockcake.com/public/2/d/e/2de50be3-20ab-43ec-bb00-ab386a713781_large/female-student-studying-stockcake.jpg" alt="Student Profile">
+        </div>
+    </div>
+
+    <table class="tab">
+        <thead>
+            <tr>
+                <th colspan="4">Student MarkSheet Table</th>
+            </tr>
+            <tr class="header-row">
+                <th style="background-color: bisque;">Name</th>
+                <th style="background-color: bisque;">Roll No</th>
+                <th style="background-color: bisque;">Subject</th>
+                <th style="background-color: bisque;">Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Swara</td>
+                <td>5</td>
+                <td>Maths</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>1</td>
+                <td>Eng</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>Ankita</td>
+                <td>15</td>
+                <td>Maths</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Rishab</td>
+                <td>33</td>
+                <td>Hindi</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
